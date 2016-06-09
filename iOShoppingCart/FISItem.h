@@ -4,12 +4,10 @@
 
 @interface FISItem : NSObject
 
-@property (strong, nonatomic) NSString *name;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic) NSUInteger priceInCents;
 
 - (instancetype)init;
-
-- (instancetype)initWithName:(NSString *)name
-                priceInCents:(NSUInteger)priceInCents;
+- (instancetype)initWithName:(NSString *)name priceInCents:(NSUInteger)priceInCents;
 
 @end
